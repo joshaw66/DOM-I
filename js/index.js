@@ -42,28 +42,35 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-
-
-
 // NAV
 
 const services = document.getElementsByTagName('a')[0];
 services.innerHTML = 'Services';
+services.style.color = 'green';
 
 const product = document.getElementsByTagName ('a')[1];
 product.innerHTML = 'Product';
+product.style.color = 'green';
 
 const vision = document.getElementsByTagName('a')[2];
 vision.innerHTML = 'Vision';
+vision.style.color = 'green';
 
 const features = document.getElementsByTagName('a')[3];
 features.innerHTML = 'Features';
+features.style.color = 'green';
 
 const about = document.getElementsByTagName('a')[4];
 about.innerHTML = 'About';
+about.style.color = 'green';
 
 const contact = document.getElementsByTagName('a')[5];
 contact.innerHTML = 'Contact';
+contact.style.color = 'green';
+
+const store = document.createElement("a");
+store.textContent = "Store";
+nav.prepend(store);
 
 
 // HEADER
@@ -80,7 +87,6 @@ ctaImg.src = "img/header-img.png";
 const middleImg = document.getElementById("middle-img");
 middleImg.src = "img/mid-page-accent.jpg";
 
-// MAIN
 
 // MAIN HEADERS
 
@@ -99,6 +105,7 @@ productHeader.innerText = siteContent['main-content']['product-h4'];
 const visionHeader = document.getElementsByTagName('h4')[4];
 visionHeader.innerText = siteContent['main-content']['vision-h4'];
 
+
 // MAIN CONTENT
 
 const featuresPage = document.getElementsByTagName('p')[0];
@@ -116,6 +123,7 @@ productPage.innerText = siteContent['main-content']['product-content'];
 const visionPage = document.getElementsByTagName('p')[4];
 visionPage.innerText = siteContent['main-content']['vision-content'];
 
+
 // CONTACT
 
 const contactHeader = document.getElementsByTagName('h4')[5];
@@ -129,6 +137,7 @@ contactPhone.innerText = siteContent['contact']['phone'];
 
 const contactEmail = document.getElementsByTagName('p')[7];
 contactEmail.innerText = siteContent['contact']['email'];
+
 
 // FOOTER
 
