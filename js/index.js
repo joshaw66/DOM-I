@@ -47,6 +47,9 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const services = document.getElementsByTagName('a')[0];
 services.innerHTML = 'Services';
 services.style.color = 'green';
+services.className = "Services";
+services.style.paddingRight = "3%"
+
 
 const product = document.getElementsByTagName ('a')[1];
 product.innerHTML = 'Product';
@@ -68,9 +71,22 @@ const contact = document.getElementsByTagName('a')[5];
 contact.innerHTML = 'Contact';
 contact.style.color = 'green';
 
-const store = document.createElement("a");
-store.textContent = "Store";
-nav.prepend(store);
+const storeNav = document.createElement("a");
+storeNav.textContent = "Store";
+storeNav.classList.add("Store-Nav")
+storeNav.style.color = "green";
+storeNav.style.paddingRight = "35%"
+
+services.prepend(storeNav);
+
+const donateNav = document.createElement("a");
+donateNav.textContent = "Donate";
+donateNav.style.color = "green";
+donateNav.style.paddingLeft = "40%"
+
+contact.append(donateNav);
+
+const navigation = document.getElementsByTagName('nav');
 
 
 // HEADER
@@ -86,7 +102,6 @@ ctaImg.src = "img/header-img.png";
 
 const middleImg = document.getElementById("middle-img");
 middleImg.src = "img/mid-page-accent.jpg";
-
 
 // MAIN HEADERS
 
